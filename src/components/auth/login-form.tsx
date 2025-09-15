@@ -37,9 +37,8 @@ const LoginForm = () => {
 
   const { pending } = useFormStatus();
   return (
-    <div className="flex items-center justify-center min-h-screen">
     <CardWrapper
-      label="Login to your account"
+      label="Login to your attendify account"
       title="Login"
       backButtonHref="/auth/register"
       backButtonLabel="Don't have an account? Register here."
@@ -57,7 +56,7 @@ const LoginForm = () => {
                     <Input
                       {...field}
                       type="email"
-                      placeholder="johndoe@gmail.com"
+                      placeholder="finechick@gmail.com"
                     />
                   </FormControl>
                   <FormMessage />
@@ -84,7 +83,6 @@ const LoginForm = () => {
         </form>
       </Form>
     </CardWrapper>
-    </div>
   );
 };
 

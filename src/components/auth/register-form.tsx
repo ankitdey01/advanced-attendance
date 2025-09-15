@@ -4,7 +4,6 @@ import CardWrapper from "./card-wrapper";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -38,10 +37,9 @@ const RegisterForm = () => {
 
   const { pending } = useFormStatus();
   return (
-    <div className="flex items-center justify-center min-h-screen">
     <CardWrapper
-      label="Create an account"
-      title="Register "
+      label="Create an account in attendify"
+      title="Register"
       backButtonHref="/auth/login"
       backButtonLabel="Already have an account? Login here."
     >
@@ -58,7 +56,7 @@ const RegisterForm = () => {
                     <Input
                       {...field}
                       type="email"
-                      placeholder="johndoe@gmail.com"
+                      placeholder="finechick@gmail.com"
                     />
                   </FormControl>
                   <FormMessage />
@@ -111,7 +109,6 @@ const RegisterForm = () => {
         </form>
       </Form>
     </CardWrapper>
-    </div>
   );
 };
 
